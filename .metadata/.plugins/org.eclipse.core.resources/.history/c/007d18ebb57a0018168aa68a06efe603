@@ -1,0 +1,13 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employees Details</title>
+</head>
+<body>
+<h1>add new employee</h1>
+<form action="saveServlet" method="post">
+
+</form>
+</body>
+</html>

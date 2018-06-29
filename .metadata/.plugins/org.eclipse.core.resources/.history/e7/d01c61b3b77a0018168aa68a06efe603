@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employees Details</title>
+</head>
+<body>
+<h1>add new employee</h1>
+<form action="saveServlet" method="post">
+<table>
+<tr><td>Name</td><td><input type="text" name="name"></td></tr>
+<tr><td>Id</td><td><input type="text" name="id"></td></tr>
+<tr><td>age</td><td><input type="text" name="age"></td></tr>
+<tr><td>Mail</td><td><input type="email" name="mail"></td></tr>
+<tr><td>mobile</td><td><input type="text" name="number"></td></tr>
+<tr><td>country</td><td><select name="country" style="width:150px">  
+<option>India</option>  
+<option>USA</option>  
+<option>UK</option>  
+<option>Other</option>  
+</select>  
+</td></tr> 
+<tr><td><input type="submit" value="Save Employee"></td></tr>
+
+</table>
+</form>
+</body>
+</html>

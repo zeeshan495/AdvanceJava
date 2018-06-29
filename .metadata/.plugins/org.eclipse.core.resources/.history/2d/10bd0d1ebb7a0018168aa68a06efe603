@@ -1,0 +1,6 @@
+
+public class PojoEmployee {
+	private String name,Mail,country;
+	private int Id,age,number;
+
+}

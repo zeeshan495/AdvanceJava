@@ -1,0 +1,43 @@
+package com.bridgelabz.servletEmployee;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class HomeServlet
+ */
+public class HomeServlet extends HttpServlet {
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");  
+        PrintWriter out=response.getWriter();  
+        out.println("");
+        out.println("<form action="saveServlet" method="post">
+<table>
+<tr><td>Name</td><td><input type="text" name="name"></td></tr>
+<tr><td>Id</td><td><input type="text" name="id"></td></tr>
+<tr><td>age</td><td><input type="text" name="age"></td></tr>
+<tr><td>Mail</td><td><input type="email" name="mail"></td></tr>
+<tr><td>mobile</td><td><input type="text" name="number"></td></tr>
+<tr><td>country</td>
+<td><select name="country" style="width:150px">  
+<option>India</option>  
+<option>USA</option>  
+<option>UK</option>  
+<option>Other</option>  
+</select>  
+</td></tr> 
+<tr><td><input type="submit" value="Save employees"/></td></tr>
+</table>
+</form>");
+        out.println("");
+        out.println("");
+        out.println("");
+	}
+
+}

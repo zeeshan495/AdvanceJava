@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employees Details</title>
+</head>
+<body>
+<h1>add new employee</h1>
+<form action="saveServlet" method="post">
+<table>
+<tr><td>Name</td><td><input type="text" name="name"></td></tr>
+<tr><td>Mail</td><td><input type="email" name="name"></td></tr>
+<tr><td>Name</td><td><input type="password" name="name"></td></tr>
+</table>
+</form>
+</body>
+</html>
