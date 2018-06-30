@@ -14,15 +14,17 @@ import javax.servlet.http.HttpServletResponse;
 
 public class deleteServlet extends HttpServlet {
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	String empID=request.getParameter("id");
+	System.out.println(empID+"employee ID inside delete servlet");
 	try {
-		DaoEmployees.delete(empID);
+		int status=DaoEmployees.delete(empID);
 		response.sendRedirect("displayServlet");
 	} catch (ClassNotFoundException | SQLException e) {
 		
 		e.printStackTrace();
 	}
+	
 	}
 
 }
